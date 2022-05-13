@@ -1,1 +1,1 @@
-print("Main Py")
+print("My Python")
