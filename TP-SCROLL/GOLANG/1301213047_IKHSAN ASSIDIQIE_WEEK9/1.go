@@ -1,18 +1,17 @@
 package main
 
-type Point struct {
-	x, y int32
+// import . "fmt"
+
+type points struct {
+	x, y int
 }
 
-func distance(pos1, pos2 Point) int {
-
+func distance() int {
 	return 0
-}
-
-func square_root(x int) int {
-	return x
 }
 
 func main() {
 
 }
+
+// Input are 4 Values the (x, y) both points, output is INT type
