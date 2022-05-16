@@ -8,6 +8,10 @@ type Customer struct {
 	married                          bool
 }
 
+func dataCustomer(sean string) int {
+	return 0
+}
+
 func main() {
 	ikhsan := Customer{
 		name:      "Ikhsan Assidiqie",
@@ -18,6 +22,16 @@ func main() {
 		height:    175,
 		married:   false,
 	}
+	dio := Customer{
+		name:      "Dio Irsaputra Siregar",
+		address:   "Bandung",
+		occupancy: "Student",
+		salary:    "2.000.000",
+		age:       19,
+		height:    172,
+		married:   false,
+	}
 
 	Println(ikhsan)
+	Println(dio.name)
 }

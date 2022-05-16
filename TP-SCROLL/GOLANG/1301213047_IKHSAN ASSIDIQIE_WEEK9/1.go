@@ -1,15 +1,5 @@
 package main
 
-// import . "fmt"
-
-type points struct {
-	x, y int
-}
-
-func distance() int {
-	return 0
-}
-
 func main() {
 
 }
