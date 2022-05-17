@@ -1,0 +1,22 @@
+Procedure fill(in/out A: tabInt, out N: integer)
+Dictionary
+i   : integer
+sid : string
+
+Algorithm
+input(sid)
+i <-- 0
+while(sid!="none") do:
+    A[i].sid <-- sid
+    input(A[i].name, A[i].gpa, A[i].eprt, A[i].sem)
+    input(sid)
+    i++
+N <-- i
+
+func highestEPRT(A: tabInt, N: integer) --> integer
+    max <-- A[i].eprt
+    for i <-- 1 to N-1 do:
+        if (A[i].eprt > max) then
+            max <-- A[i].eprt
+        i++
+return max

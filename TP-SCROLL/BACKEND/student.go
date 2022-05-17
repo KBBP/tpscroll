@@ -2,27 +2,36 @@ package main
 
 import . "fmt"
 
-type Array struct {
-	gpa float64
+type MyArrays struct {
+	name      string
+	eprt, gpa float64
+	sem       int
 }
 
-func highest() {
-
-}
-
-func lowest() {
-
-}
-
-func avg() {
-
-}
+// --> {name, gpa, eprt, sem} constructor
 
 func main() {
-	Println("Max: ")
+	ikhsan := MyArrays{
+		name: "Ikhsan Assidiqie",
+		eprt: 5.4,
+		gpa:  2.8,
+		sem:  4,
+	}
+
+	Println("Name:", ikhsan.name,
+		"\nGPA:", ikhsan.gpa,
+		"\nEPRT Score:", ikhsan.eprt,
+		"\nCurrent Semester:", ikhsan.sem)
 }
 
-// FINDING HIGHEST EPRT SCORE
-// FINDING LOWEST GPA
-// AVERAGE ALL SEMESTER TAKEN
-// STUDENTS !=> 1.000 STUDENTS
+func highestEprt(customArray MyArrays) {
+	
+}
+
+func lowestGpa() {
+
+}
+
+func avgSem() {
+
+}
