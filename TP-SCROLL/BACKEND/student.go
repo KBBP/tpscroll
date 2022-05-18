@@ -1,13 +1,14 @@
 package main
 
-import . "fmt"
-
 // TODO: import base.json into student.go
 
+import . "fmt"
+
 type BaseArray struct {
-	name      string
-	eprt, gpa float64
-	sem       int
+	name string
+	eprt int
+	gpa  float64
+	sem  int
 }
 
 // --> {name, gpa, eprt, sem} constructor
@@ -16,8 +17,8 @@ func main() {
 
 	users := BaseArray{
 		name: "John Doe",
-		eprt: 5.4,
-		gpa:  2.8,
+		eprt: 550,
+		gpa:  3.6,
 		sem:  4,
 	} // PROJECTING ARRAYS INTO BaseArray
 	// PULLING FILES LOGIC
@@ -33,8 +34,8 @@ func highestEprt(N int) int {
 
 	users := BaseArray{
 		name: "John Doe",
-		eprt: 5.4, // (array[index].eprt)
-		gpa:  2.8, // (array[index].gpa)
+		eprt: 550, // (array[index].eprt)
+		gpa:  3.4, // (array[index].gpa)
 		sem:  4,   // (array[index].sem)
 	} // PROJECTING ARRAYS INTO BaseArray
 	// PULLING FILES LOGIC
@@ -50,24 +51,17 @@ func highestEprt(N int) int {
 	return int(max)
 }
 
-func lowestGpa() int{
-	i := 1
-	users := BaseArray {
+func lowestGpa() int {
+	users := BaseArray{
 		name: "Maria Doe",
-		eprt: 6.6,
-		gpa:2.6,
-		sem: 2,
+		eprt: 550,
+		gpa:  3.6,
+		sem:  2,
 	}
 
-	min := users.gpa
-	for i < N-1 {
-		if users.gpa < min {
-			min = users.gpa
-		}
-		i++
-	}
+	Println(users)
 
-	return int(min)
+	return 0
 }
 
 func avgSem() {
