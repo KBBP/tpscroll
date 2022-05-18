@@ -50,8 +50,24 @@ func highestEprt(N int) int {
 	return int(max)
 }
 
-func lowestGpa() {
+func lowestGpa() int{
+	i := 1
+	users := BaseArray {
+		name: "Maria Doe",
+		eprt: 6.6,
+		gpa:2.6,
+		sem: 2,
+	}
 
+	min := users.gpa
+	for i < N-1 {
+		if users.gpa < min {
+			min = users.gpa
+		}
+		i++
+	}
+
+	return int(min)
 }
 
 func avgSem() {
