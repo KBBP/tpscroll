@@ -1,12 +1,16 @@
 package main
 
-var _ = 2021
-
-type tab struct {
-	myArray [2020]int
-	n       int
-}
+import "fmt"
 
 func main() {
-	const ikhsan = "Ikhsan"
+	var myArray [6]int
+	myArray[1] = 2
+	myArray[3] = 4
+	myArray[5] = 7
+
+	for i := 0; i <= 6; i++ {
+		if myArray[i] < 5 {
+			fmt.Println(myArray[i])
+		}
+	}
 }
