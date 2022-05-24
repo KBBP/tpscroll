@@ -1,27 +1,20 @@
 package main
 
+import "fmt"
+
 func main() {
-	var (
-		arrayCustom = [10]int{
-			20,
-			10,
-			40,
-			30,
-			70,
-			80,
-			50,
-			60,
-			100,
-			90,
+	var grade = []int{3, 1, 6, 30, 8, 9, 2, 5, 9} // Panjang Array Real 9
+	var temp int
+
+	for i := 1; i < len(grade); i++ {
+		for k := 0; k < len(grade)-1; k++ {
+			temp = grade[k]
+			grade[k] = grade[k+1]
+			grade[k+1] = temp
 		}
-	)
+		fmt.Println(grade)
+	}
 
-	//	j < i
-	//		temp = i
-	//		i = j
-	//		j = temp
-	//	[20,< 10, 40, 30, 70, 80, 50, 60, 100, 90]
-
-	//fmt.Println(arrayCustom[9]) => max point arrayCustom index: 9
-	//	positioning harus ada i sama j
+	fmt.Println("Hasil akhir: ")
+	fmt.Println(grade)
 }
